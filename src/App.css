@@ -1,3 +1,16 @@
+:root {
+  --color-background: #191919;
+  --color-text-primary: #ffffff;
+  --color-neutral-accent: #979797;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +48,29 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.navBar-header {
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 2px solid var(--color-neutral-accent);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.home-page {
+
+  height: 100vh;
+}
+
+.home-page h1 {
+  font-size: 3rem;
+  margin-top: 8rem;
+  padding: 2rem;
 }
