@@ -9,6 +9,7 @@ function Home( ) {
             <Navbar />
             <div className="home-page">
                 <h1>Home</h1>
+                <a href="/headphones">Headphones</a>
             </div>
             <Example />
         </>
