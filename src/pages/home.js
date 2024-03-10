@@ -1,6 +1,6 @@
-import Example from "../components/Alert";
-import Navbar from "../components/Navbar";
 
+import Navbar from "../components/Navbar";
+import imageHeader from "../assets/home/mobile/image-header.jpg";
 
 
 function Home( ) {
@@ -8,10 +8,18 @@ function Home( ) {
         <>
             <Navbar />
             <div className="home-page">
-                <h1>Home</h1>
-                <a href="/headphones">Headphones</a>
+                
+                <div className="home-header bg-dark">
+                    <div className="home-header-text color-light space-1">
+                        <p>New Product</p>
+                        <h2>XX99 Mark II Headphones</h2>
+                        <p>Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast.</p>
+                        <button>See Product</button>
+                    </div>
+
+                    <img src={imageHeader} alt="XX99 Mark 2 Headphones" className="home-header-img"></img>
+                </div>
             </div>
-            <Example />
         </>
     );
 }

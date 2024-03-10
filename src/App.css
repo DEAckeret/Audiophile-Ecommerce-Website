@@ -1,58 +1,158 @@
+
+/* https://piccalil.li/blog/a-modern-css-reset */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+
 :root {
-  --color-background: #191919;
-  --color-text-primary: #ffffff;
+
+  --color-neutral: #ffffff;
+  --color-neutral-100: #fafafa;
+  --color-dark: #191919;
+  --color-dark-100: #000000;
   --color-neutral-accent: #979797;
+
+  --color-primary: #D87D4A;
+  --color-secondary: #FBAF85;
+
+  --font-family: 'Manrope', sans-serif;
+
+  --font-weight-regular: 400;
+  --font-weight-normal: 500;
+  --font-weight-bold: 700;
 }
 
 body {
-  height: 100vh;
+
   width: 100vw;
-  background-color: var(--color-background);
-  color: var(--color-text-primary);
+  font-family: var(--font-family);
 }
 
-.App {
-  text-align: center;
+button {
+  padding-block: 1.25rem;
+  padding-inline: 2.5rem;
+  border: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* CLASS COMPONENTS */
+
+.filler-1 {
+  margin-top: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.filler-2 {
+  margin-top: 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.filler-3 {
+  margin-top: 3rem;
 }
 
-.App-link {
-  color: #61dafb;
+.filler-4 {
+  margin-top: 4rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.space-1 > *{
+  margin-top: .5rem;
 }
+
+.bg-dark {
+  background-color: var(--color-dark);
+}
+
+.bg-light {
+  background-color: var(--color-neutral);
+}
+
+.color-dark {
+  color: var(--color-dark);
+}
+
+.color-light {
+  color: var(--color-neutral);
+}
+
+.color-neutral-accent {
+  color: var(--color-neutral-accent);
+}
+
+/* NAVBAR */
 
 .navBar-header {
-  background-color: var(--color-background);
-  color: var(--color-text-primary);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -60,17 +160,71 @@ body {
   border-bottom: 2px solid var(--color-neutral-accent);
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
   box-sizing: border-box;
+  font-weight: var(--font-weight-bold);
+  z-index: 100;
 }
 
+
+/* HOME PAGE  optimized for mobile first*/
 .home-page {
 
   height: 100vh;
+  width: 100vw;
+  margin-inline: 2%;
 }
 
-.home-page h1 {
-  font-size: 3rem;
-  margin-top: 8rem;
-  padding: 2rem;
+.home-header {
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+  position: relative;
+}
+
+.home-header-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+  z-index: 2;
+  position: absolute;
+  top: 32%;
+  margin-inline: 2rem;
+}
+
+.home-header-text :nth-child(1) {
+  font-size: 16px;
+  color: var(--color-neutral-accent);
+  text-transform: uppercase;
+  letter-spacing: .75rem;
+}
+
+.home-header-text :nth-child(2) {
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.home-header-text :nth-child(3) {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color-neutral-accent);
+}
+
+.home-header-text :nth-child(4) {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-neutral);
+  background-color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: .15rem;
+}
+
+@media (min-width: 768px) {
+  .home-header-text {
+    z-index: 0;
+  }
 }

@@ -7,7 +7,7 @@ const hamburger = <FontAwesomeIcon icon={faHamburger} style={{color: "#ffffff",}
 
 function Navbar( ) {
     return (
-        <div className='navBar-header'>
+        <div className='navBar-header bg-dark color-light'>
             {hamburger}
             <h1>audiophile</h1>
             {shoppingCart}
