@@ -2,6 +2,7 @@
 import Navbar from "../components/Navbar";
 import imageHeader from "../assets/home/mobile/image-header.jpg";
 import MobileMenu from "../components/mobile-comp/MobileMenu";
+import ProductAd from "../components/ProductAd";
 
 
 function Home( ) {
@@ -21,9 +22,13 @@ function Home( ) {
                     <img src={imageHeader} alt="XX99 Mark 2 Headphones" className="home-header-img"></img>
                 </div>
 
-                <div className="filler-4"></div>
+                <div className="filler-8"></div>
                 
                 <MobileMenu />
+
+                <div className="filler-8"></div>
+
+                <ProductAd />
             </div>
         </>
     );

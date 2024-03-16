@@ -131,6 +131,34 @@ button {
   margin-top: 5rem;
 }
 
+.filler-6 {
+  margin-top: 6rem;
+}
+
+.filler-7 {
+  margin-top: 7rem;
+}
+
+.filler-8 {
+  margin-top: 8rem;
+}
+
+.filler-9 {
+  margin-top: 9rem;
+}
+
+.filler-10 {
+  margin-top: 10rem;
+}
+
+.filler-15 {
+  margin-top: 15rem;
+}
+
+.filler-20 {
+  margin-top: 20rem;
+}
+
 .space-1 > *{
   margin-top: .5rem;
 }
@@ -175,8 +203,6 @@ button {
 
 /* HOME PAGE  optimized for mobile first*/
 .home-page {
-
-  height: 100vh;
   width: 100vw;
 }
 
@@ -240,38 +266,44 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
-  
-  
-  
   padding-inline: 2rem;
 }
 
 .mobile-section {
   background-color: var(--color-neutral-200);
   position: relative;
-  height: auto;
+  height: 11rem;
   width: 90vw;
   border-radius: 1rem; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 2rem;
 }
 
-.mobile-section :nth-child(1) {
+.mobile-section > :nth-child(1) {
 position: absolute;
-top: -50%;
+top: -40%;
 left: 50%;
 height: auto;
-width: 300px;
+width: 10rem;
 transform: translate(-50%, 0%);
 }
 
 .mobile-section :nth-child(2) {
   text-transform: uppercase;
   text-align: center;
+  font-weight: 700;
 }
 
 .mobile-section :nth-child(3) {
   text-transform: uppercase;
   text-align: center;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
 }
 
 /* this is for the arrow svg next to SHOP */
@@ -280,3 +312,56 @@ transform: translate(-50%, 0%);
   width: 1rem;
 }
 
+
+
+/* PRODUCT AD */
+
+.product-ad {
+  display: grid;
+  padding-inline: 1.25rem;
+}
+
+.product-ad .pa-section-one {
+  background-color: var(--color-primary);
+  background-image: url(./assets/home/desktop/pattern-circles.svg);
+  background-size: cover;
+  background-position: center;
+  color: var(--color-neutral);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+  padding: 3rem;
+}
+
+.pa-section-one :nth-child(1){
+height: auto;
+width: 10rem;
+}
+
+
+
+.product-ad .pa-section-two {
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.product-ad .pa-section-three {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color-neutral-accent);
+}
+
+.product-ad .pa-section-four {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-neutral);
+  background-color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: .15rem;
+}
