@@ -318,7 +318,10 @@ transform: translate(-50%, 0%);
 
 .product-ad {
   display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
   padding-inline: 1.25rem;
+  gap: 1.5rem;
 }
 
 .product-ad .pa-section-one {
@@ -335,6 +338,8 @@ transform: translate(-50%, 0%);
   text-align: center;
   gap: 1rem;
   padding: 3rem;
+  grid-row-start: 1;
+  grid-row-end: 3;
 }
 
 .pa-section-one :nth-child(1){
@@ -345,23 +350,97 @@ width: 10rem;
 
 
 .product-ad .pa-section-two {
-  font-size: 48px;
-  font-weight: 700;
+  background-image: url(./assets/home/mobile/image-speaker-zx7.jpg);
+  background-size: cover;
+   border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 3rem;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.pa-section-two :nth-child(1) {
+  font-size: 16px;
+  color: var(--color-neutral-accent);
   text-transform: uppercase;
-  line-height: 1;
+  letter-spacing: .75rem;
 }
 
 .product-ad .pa-section-three {
-  font-size: 18px;
-  font-weight: 500;
-  color: var(--color-neutral-accent);
+  border-radius: 1rem;
+  background-image: url(./assets/home/mobile/image-earphones-yx1.jpg);
+  background-size: cover;
+  padding: 3rem;
+  grid-row-start: 4;
+  grid-row-end: 5;
 }
+
 
 .product-ad .pa-section-four {
   font-size: 16px;
   font-weight: 500;
-  color: var(--color-neutral);
-  background-color: var(--color-primary);
+  color: var(--color-dark);
+  background-color: var(--color-neutral-200);
   text-transform: uppercase;
   letter-spacing: .15rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+}
+
+
+/* BRAND MESSAGE */
+
+.brand-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding-inline: 1.25rem;
+}
+
+.brand-model {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-model :nth-child(1) {
+  border-radius: 1rem;
+  
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+}
+
+.brand-text :nth-child(1) {
+  font-size: 28px;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.brand-text :nth-child(2) {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  color: var(--color-neutral-accent);
+  text-indent: 2rem;
+}
+
+.brand-best {
+  color: var(--color-primary);
 }

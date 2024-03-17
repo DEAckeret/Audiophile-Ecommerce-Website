@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import imageHeader from "../assets/home/mobile/image-header.jpg";
 import MobileMenu from "../components/mobile-comp/MobileMenu";
 import ProductAd from "../components/ProductAd";
+import BrandMessage from "../components/BrandMessage";
 
 
 function Home( ) {
@@ -29,6 +30,12 @@ function Home( ) {
                 <div className="filler-8"></div>
 
                 <ProductAd />
+
+                <div className="filler-8"></div>
+
+                <BrandMessage />
+
+                
             </div>
         </>
     );

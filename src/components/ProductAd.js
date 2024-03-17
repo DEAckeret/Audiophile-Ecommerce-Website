@@ -9,9 +9,16 @@ function ProductAd() {
         <p>Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.</p>
         <button>See Product</button>
       </div>
-      <div className="pa-section-two"></div>
+      <div className="pa-section-two">
+        <p>zx7 speaker</p>
+              <button>See Product</button>
+      </div>
+      
       <div className="pa-section-three"></div>
-      <div className="pa-section-four"></div>
+      <div className="pa-section-four">
+        <p>YX1 EARPHONES</p>
+        <button>See Product</button>
+      </div>
     </div>
   );
 }
