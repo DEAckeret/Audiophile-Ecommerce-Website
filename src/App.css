@@ -260,6 +260,28 @@ button {
   }
 }
 
+/* Headphones Page */
+
+.headphones-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding-inline: 1.25rem;
+}
+
+.headphones-title {
+  font-weight: 800;
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: var(--color-dark-100);
+  color: var(--color-neutral);
+  margin-top: 8vh;
+  padding: 1rem 2rem;
+  width: 100vw;
+}
+
 /* MOBILE MENU this frequents on mobile view. */
 
 .mobile-menu {
@@ -443,4 +465,59 @@ width: 10rem;
 
 .brand-best {
   color: var(--color-primary);
+}
+
+
+/* FOOTER */
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding-inline: 1.25rem;
+}
+
+.footer-content h1 {
+  font-weight: 800;
+  margin-block: 2rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.footer-links a {
+  font-weight: 500;
+  color: var(--color-neutral);
+  text-transform: uppercase;
+  letter-spacing: .15rem;
+  text-decoration: none;
+}
+
+.footer-sendoff {
+  font-weight: 500;
+  color: var(--color-neutral-accent);
+  text-align: center;
+  margin-top: 2rem;
+  line-height: 2rem;
+}
+
+.footer-copyright {
+  font-weight: 500;
+  color: var(--color-neutral-accent);
+  letter-spacing: .15rem;
+  text-align: center;
+  margin-block: 2rem;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }

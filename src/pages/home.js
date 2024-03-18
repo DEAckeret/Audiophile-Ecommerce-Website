@@ -4,6 +4,7 @@ import imageHeader from "../assets/home/mobile/image-header.jpg";
 import MobileMenu from "../components/mobile-comp/MobileMenu";
 import ProductAd from "../components/ProductAd";
 import BrandMessage from "../components/BrandMessage";
+import Footer from "../components/Footer";
 
 
 function Home( ) {
@@ -35,7 +36,9 @@ function Home( ) {
 
                 <BrandMessage />
 
-                
+                <div className="filler-8"></div>
+
+                <Footer />
             </div>
         </>
     );
