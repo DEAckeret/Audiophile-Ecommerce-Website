@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Audiophile-Ecommerce-Website/static/css/main.be2aabef.css",
-    "main.js": "/Audiophile-Ecommerce-Website/static/js/main.357d9c2f.js",
+    "main.js": "/Audiophile-Ecommerce-Website/static/js/main.df9524b3.js",
     "static/js/787.ccadfd74.chunk.js": "/Audiophile-Ecommerce-Website/static/js/787.ccadfd74.chunk.js",
     "static/media/image-speaker-zx9.png": "/Audiophile-Ecommerce-Website/static/media/image-speaker-zx9.97769f2fb291eaed1868.png",
     "static/media/image-category-thumbnail-headphones.png": "/Audiophile-Ecommerce-Website/static/media/image-category-thumbnail-headphones.fbd401d9c735a217286f.png",
@@ -9,6 +9,7 @@
     "static/media/image-category-thumbnail-speakers.png": "/Audiophile-Ecommerce-Website/static/media/image-category-thumbnail-speakers.bbb1a70b6ebc42d18df7.png",
     "static/media/image-category-thumbnail-earphones.png": "/Audiophile-Ecommerce-Website/static/media/image-category-thumbnail-earphones.6e8830d475e04b7b9627.png",
     "static/media/image-header.jpg": "/Audiophile-Ecommerce-Website/static/media/image-header.d200a3583e72c7981f46.jpg",
+    "static/media/image-xx99-mark-one-headphones.jpg": "/Audiophile-Ecommerce-Website/static/media/image-xx99-mark-one-headphones.10fdef11c453651ae4b5.jpg",
     "static/media/image-speaker-zx7.jpg": "/Audiophile-Ecommerce-Website/static/media/image-speaker-zx7.82dc33d645ab18cf1ac1.jpg",
     "static/media/image-xx99-mark-two-headphones.jpg": "/Audiophile-Ecommerce-Website/static/media/image-xx99-mark-two-headphones.0ead05d95f8a7e5e17d2.jpg",
     "static/media/image-earphones-yx1.jpg": "/Audiophile-Ecommerce-Website/static/media/image-earphones-yx1.48e16a44bd58ed3be41e.jpg",
@@ -19,11 +20,11 @@
     "static/media/pattern-circles.svg": "/Audiophile-Ecommerce-Website/static/media/pattern-circles.f4df3610b83b818abbbe.svg",
     "static/media/icon-arrow-right.svg": "/Audiophile-Ecommerce-Website/static/media/icon-arrow-right.357b9db81a798d76397efa2f4ad3409f.svg",
     "main.be2aabef.css.map": "/Audiophile-Ecommerce-Website/static/css/main.be2aabef.css.map",
-    "main.357d9c2f.js.map": "/Audiophile-Ecommerce-Website/static/js/main.357d9c2f.js.map",
+    "main.df9524b3.js.map": "/Audiophile-Ecommerce-Website/static/js/main.df9524b3.js.map",
     "787.ccadfd74.chunk.js.map": "/Audiophile-Ecommerce-Website/static/js/787.ccadfd74.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.be2aabef.css",
-    "static/js/main.357d9c2f.js"
+    "static/js/main.df9524b3.js"
   ]
 }
