@@ -1,11 +1,42 @@
-
+import yx1 from '../assets/shared/desktop/image-category-thumbnail-earphones.png';
+import Navbar from "../components/Navbar";
+import MobileMenu from "../components/mobile-comp/MobileMenu";
+import BrandMessage from "../components/BrandMessage";
+import Footer from "../components/Footer";
 
 function Earphones() {
     return (
-        <div>
-            <h1>Earphones</h1>
-        </div>
-    )
-}
-
+        <>
+              <Navbar />
+              <div className="headphones-page">
+                <p className="headphones-title">Earphones</p>
+        
+                <div className="headphones-product">
+                  <div className="headphones-product-img">
+                    <img src={yx1} alt="YX1 Earphones" />
+                  </div>
+        
+                  <div className="headphones-product-info">
+                    <p>NEW PRODUCT</p>
+                    <h2>YX1 Earphones</h2>
+                    <p>The new </p>
+                    <button>See Product</button>
+                  </div>
+              </div>
+        
+              <div className="filler-8"></div>
+        
+              <MobileMenu />
+        
+              <div className="filler-8"></div>
+        
+              <BrandMessage />
+        
+              <div className="filler-8"></div>  
+        
+              <Footer />
+            </div>
+          </>
+        );
+        }
 export default Earphones;
