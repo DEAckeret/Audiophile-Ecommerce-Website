@@ -76,6 +76,11 @@ select {
   }
 }
 
+a {
+  text-decoration: none;
+
+}
+
 
 
 :root {
@@ -282,6 +287,18 @@ button {
   width: 100vw;
 }
 
+.page-banner{
+  font-weight: 800;
+    font-size: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: var(--color-dark-100);
+    color: var(--color-neutral);
+    margin-top: 8vh;
+    padding: 1rem 2rem;
+    width: 100vw;
+}
+
 /* MOBILE MENU this frequents on mobile view. */
 
 .mobile-menu {
@@ -416,6 +433,16 @@ width: 10rem;
   align-items: center;
   justify-content: center;
   padding: 3rem;
+}
+
+/* PRODUCT PAGE */
+
+.pp-section-title {
+  font-weight: 800;
+  font-size: 36px;
+  text-transform: uppercase;
+  color: var(--color-dark-100);
+
 }
 
 

@@ -4,13 +4,14 @@ import zx7 from "../assets/shared/desktop/image-zx7-speaker.jpg";
 import MobileMenu from "../components/mobile-comp/MobileMenu";
 import BrandMessage from "../components/BrandMessage";
 import Footer from "../components/Footer";
+import PageBanner from "../components/PageBanner";
 
 function Speakers() {
   return (
     <>
           <Navbar />
           <div className="headphones-page">
-            <p className="headphones-title">Speakers</p>
+            <PageBanner page = "speakers"/>
     
             <div className="headphones-product">
               <div className="headphones-product-img">

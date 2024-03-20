@@ -5,13 +5,30 @@ import xx59 from "../assets/shared/desktop/image-xx59-headphones.jpg";
 import MobileMenu from "../components/mobile-comp/MobileMenu";
 import BrandMessage from "../components/BrandMessage";
 import Footer from "../components/Footer";
+import PageBanner from "../components/PageBanner";
+
+import { useNavigate } from "react-router-dom";
 
 function Headphones( ) {
+  const navigate = useNavigate();
+
+  const handleClickM2 = () => {
+    navigate("/headphones/mark-two");
+  }; 
+
+  const handleClickM1 = () => {
+    navigate("/headphones/mark-one");
+  };
+
+  const handleClickX59 = () => {
+    navigate("/headphones/xx59");
+  };
+
   return (
     <>
       <Navbar />
       <div className="headphones-page">
-        <p className="headphones-title">Headphones</p>
+        <PageBanner page="headphones" />
 
         <div className="headphones-product">
           <div className="headphones-product-img">
@@ -22,7 +39,7 @@ function Headphones( ) {
             <p>NEW PRODUCT</p>
             <h2>XX99 Mark II Headphones</h2>
             <p>The new </p>
-            <button>See Product</button>
+            <button onClick={handleClickM2}>See Product</button>
           </div>
 
           <div className="filler-5"></div>
@@ -34,7 +51,7 @@ function Headphones( ) {
           <div className="headphones-product-info">
                       <h2>XX99 Mark I Headphones</h2>
                       
-                      <button>See Product</button>
+                      <button onClick={handleClickM1}>See Product</button>
           </div>
 
           <div className="filler-5"></div>
@@ -46,7 +63,7 @@ function Headphones( ) {
           <div className="headphones-product-info">
                       <h2>XX59 Headphones</h2>
                       
-                      <button>See Product</button>
+                      <button onClick={handleClickX59}>See Product</button>
           </div>
       </div>
 

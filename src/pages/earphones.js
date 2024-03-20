@@ -3,13 +3,14 @@ import Navbar from "../components/Navbar";
 import MobileMenu from "../components/mobile-comp/MobileMenu";
 import BrandMessage from "../components/BrandMessage";
 import Footer from "../components/Footer";
+import PageBanner from '../components/PageBanner';
 
 function Earphones() {
     return (
         <>
               <Navbar />
               <div className="headphones-page">
-                <p className="headphones-title">Earphones</p>
+                <PageBanner page="earphones" />
         
                 <div className="headphones-product">
                   <div className="headphones-product-img">
