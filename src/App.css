@@ -205,6 +205,32 @@ button {
   z-index: 100;
 }
 
+/* CHECKOUT MODAL */
+
+.checkout-modal {
+  position: fixed;
+  top: 59.7%; /* SEMI FIXED, MAGIC NUMBER, NEEDS TO BE FIXED */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 90;
+  display: none; 
+  height: 100%;
+  width: 100%;
+  background-color: #4b4b4b98;
+}
+
+.checkout-modal-visible {
+  display: flex; 
+}
+
+.cart-button
+{
+  background: none;
+  border: none;
+  display: flex;
+  padding: 0;
+}
+
 
 /* HOME PAGE  optimized for mobile first*/
 .home-page {

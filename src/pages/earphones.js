@@ -5,7 +5,17 @@ import BrandMessage from "../components/BrandMessage";
 import Footer from "../components/Footer";
 import PageBanner from '../components/PageBanner';
 
+import { useNavigate } from "react-router-dom";
+
 function Earphones() {
+
+   const navigate = useNavigate();
+  
+    const handleClickYX1 = () => {
+      navigate("/earphones/yx1");
+    };
+
+
     return (
         <>
               <Navbar />
@@ -21,7 +31,7 @@ function Earphones() {
                     <p>NEW PRODUCT</p>
                     <h2>YX1 Earphones</h2>
                     <p>The new </p>
-                    <button>See Product</button>
+                    <button onClick={handleClickYX1}>See Product</button>
                   </div>
               </div>
         

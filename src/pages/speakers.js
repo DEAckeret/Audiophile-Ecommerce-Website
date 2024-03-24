@@ -6,7 +6,20 @@ import BrandMessage from "../components/BrandMessage";
 import Footer from "../components/Footer";
 import PageBanner from "../components/PageBanner";
 
+import { useNavigate } from "react-router-dom";
+
 function Speakers() {
+
+  const navigate = useNavigate();
+
+  const handleClickZX9 = () => {
+    navigate("/speakers/zx9");
+  };
+
+  const handleClickZX7 = () => {
+    navigate("/speakers/zx7");
+  };
+
   return (
     <>
           <Navbar />
@@ -22,7 +35,7 @@ function Speakers() {
                 <p>NEW PRODUCT</p>
                 <h2>ZX9 Speaker</h2>
                 <p>The new </p>
-                <button>See Product</button>
+                <button onClick={handleClickZX9}>See Product</button>
               </div>
     
               <div className="filler-5"></div>
@@ -34,7 +47,7 @@ function Speakers() {
               <div className="headphones-product-info">
                           <h2>ZX7 Speaker</h2>
                           
-                          <button>See Product</button>
+                          <button onClick={handleClickZX7}>See Product</button>
               </div>
           </div>
     

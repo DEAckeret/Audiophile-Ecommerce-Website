@@ -16,41 +16,43 @@ function AlsoLike({ alsoLike }) {
         switch (alsoLike) {
             case 'xx99-mark-two':
             alternatives = [
-                {title: 'xx99 mark i', image: {xx99MarkOne}}, {title: 'xx59', image: {xx59}},
-                {title: 'zx9 speaker', image: {zx9}}];
+                {title: 'xx99 mark i', image: xx99MarkOne}, {title: 'xx59', image: xx59},
+                {title: 'zx9 speaker', image: zx9}];
             break;
             case 'xx99-mark-one':
             alternatives = [
-                {title: 'xx99 mark two', image: {xx99MarkTwo}}, {title: 'xx59', image: {xx59}},
-                {title: 'yx1 earphones', image: {yx1}}];
+                {title: 'xx99 mark two', image: xx99MarkTwo}, {title: 'xx59', image: xx59},
+                {title: 'zx9 speaker', image: zx9}];
             break;
             case 'xx59':
             alternatives = [
-                {title: 'xx99 mark two', image: {xx99MarkTwo}}, {title: 'xx99 mark one', image: {xx99MarkOne}},
-                {title: 'yx1 earphones', image: {yx1}}];
+                {title: 'xx99 mark two', image: xx99MarkTwo}, {title: 'xx99 mark one', image: xx99MarkOne},
+                {title: 'zx9 speaker', image: zx9}];
             break;
             case 'yx1':
             alternatives = [
-                {title: 'xx99 mark two', image: {xx99MarkTwo}}, {title: 'xx99 mark one', image: {xx99MarkOne}},
-                {title: 'xx59', image: {xx59}}];
+                {title: 'xx99 mark one', image: xx99MarkOne}, {title: 'xx59', image: xx59},
+                {title: 'zx9 speaker', image: zx9}];
             break;
             case 'zx9':
             alternatives = [
-                {title: 'xx99 mark two', image: {xx99MarkTwo}}, {title: 'xx59', image: {xx59}},
-                {title: 'zx7', image: {zx7}}];
+                {title: 'zx7', image: zx7}, 
+                {title: 'xx99 mark one', image: xx99MarkOne},
+                {title: 'xx59', image: xx59}];
             break;
             case 'zx7':
             alternatives = [
-                {title: 'xx99 mark two', image: {xx99MarkTwo}}, {title: 'xx59', image: {xx59}},
-                {title: 'zx9', image: {zx9}}];
+                {title: 'zx9', image: zx9}, 
+                {title: 'xx99 mark one', image: xx99MarkOne},
+                {title: 'xx59', image: xx59}];
             break;
             default:
             defaultAlts = [
-                {title: 'xx99 mark two', image: {xx99MarkTwo}}, {title: 'xx99 mark one', image: {xx99MarkOne}},
-                {title: 'xx59', image: {xx59}}];
+                {title: 'xx99 mark two', image: xx99MarkTwo}, {title: 'xx99 mark one', image: xx99MarkOne},
+                {title: 'xx59', image: xx59}];
         }
 
-
+        
   return (
     <div className="also-like">
       <h2>You may also like</h2>
